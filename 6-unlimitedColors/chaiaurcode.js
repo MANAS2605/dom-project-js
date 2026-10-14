@@ -20,9 +20,8 @@ function startChangeBg(){
 }
 function stopChangeBg(){
   clearInterval(intervalId);
+  intervalId=null;
 }
-if(true){
   document.querySelector('#start').addEventListener('click',startChangeBg);
 document.querySelector('#stop').addEventListener('click',stopChangeBg);
-}
 
