@@ -15,12 +15,14 @@ function startChangeBg(){
    intervalId= setInterval(changeBg,1000);
   }
   function changeBg(){
-    document.querySelector('body').style.backgroundColor=randomColor();
+    document.body.style.backgroundColor=randomColor();
   }
 }
 function stopChangeBg(){
   clearInterval(intervalId);
 }
-
-document.querySelector('#start').addEventListener('click',startChangeBg);
+if(true){
+  document.querySelector('#start').addEventListener('click',startChangeBg);
 document.querySelector('#stop').addEventListener('click',stopChangeBg);
+}
+
