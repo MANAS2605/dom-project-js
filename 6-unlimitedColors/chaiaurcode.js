@@ -15,7 +15,7 @@ function startChangeBg(){
    intervalId= setInterval(changeBg,1000);
   }
   function changeBg(){
-    document.querySelector('body').style.backgroundColor=randomColor;
+    document.querySelector('body').style.backgroundColor=randomColor();
   }
 }
 function stopChangeBg(){
